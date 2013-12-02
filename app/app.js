@@ -7,13 +7,11 @@ app.config(function ($routeProvider) {
                 controller: 'CustomersController',
                 templateUrl: 'app/views/customers.html'
             })
-        //Define a route that has a route parameter in it (:customerID)
         .when('/customerorders/:customerID',
             {
                 controller: 'CustomerOrdersController',
                 templateUrl: 'app/views/customerOrders.html'
             })
-        //Define a route that has a route parameter in it (:customerID)
         .when('/orders',
             {
                 controller: 'OrdersController',
